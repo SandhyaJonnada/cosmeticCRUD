@@ -1,0 +1,29 @@
+<div class="panel panel-default" ng-init="getCosmetics()" style="opacity: 0.9"  style="font-weight: 800; color: black;">
+  <div class="panel-heading" style="background-image:none; background: #A0A0A0; font-weight: 800; color: black;">
+    <h3 class="panel-title"  style="font-weight: bold; color: black;" >Wish List</h3>
+  </div>
+    
+ 
+  <div class="panel-body" style="font-weight: 800; color: black;">
+    <div class="row">
+    	<div ng-repeat="cosmetic in cosmetics">
+            
+            
+            
+    		<div class="col-md-6">
+    			<div class="col-md-6" style="font-weight: 800; color: black;">
+    				<h2>{{cosmetic.item}}</h2>
+    				<p>{{cosmetic.brand}}</p>
+                    <p>{{cosmetic.price}}</p>
+    				<a class="btn btn-primary" href="#/cosmetics/details/{{cosmetic._id}}">View Details</a>
+    			</div>
+    			<div class="col-md-6">
+    				<img class="thumbnail" src="{{cosmetic.image_url}}" height="140" width="20">
+    			</div>
+    		</div>
+    	
+    </div>
+  </div>
+      
+    </div>
+</div>

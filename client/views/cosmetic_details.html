@@ -1,0 +1,39 @@
+
+<div class="panel panel-default" ng-init="getCosmetic()" style="opacity:0.9"  style="font-weight: 800; color: black;">
+  <div class="panel-heading" style=" background-image:none; background: #A0A0A0; font-weight: 800; color: black;">
+    <h3 class="panel-title" style="font-weight: 800; color: black;">{{cosmetic.item}}</h3>
+  </div>
+  <div class="panel-body" style="font-weight: 800; color: black;">
+    
+      <div class="col-md-4">
+        <img src="{{cosmetic.image_url}}">
+      </div>
+      <div class="col-md-8">
+        
+        <ul class="list-group">
+          <li class="list-group-item">Type: {{cosmetic.type}}</li>
+         
+          <li class="list-group-item">Brand: {{cosmetic.brand}}</li>
+          <li class="list-group-item">Price: {{cosmetic.price}}</li>
+        </ul>
+      
+          
+        
+          <div class="pull-bottom">
+              <div class="pull-left"><a target="_blank" href="{{cosmetic.buy_url}}" class="btn btn-primary">Buy on Amazon</a></div>
+              <div class="pull-right">
+            
+            <a href="#/cosmetics" class="btn btn-primary">Go Back</a> 
+                |
+          
+  <a href="#/cosmetics/edit/{{cosmetic._id}}" class="btn btn-primary">Edit</a> |  <a href="#" ng-click="removeCosmetic(cosmetic._id)" class="btn btn-primary">Delete</a>
+  </div>
+           </div>
+          <br>
+          
+          
+      </div>
+    
+  </div>
+</div>
+

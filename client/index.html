@@ -1,0 +1,50 @@
+<html ng-app="myApp">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>CosmeticStore</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
+    
+</head>
+<body>
+   <nav class="navbar">
+      <div class="container">
+          <h1 class="navbar-brand" style="float: left;">
+              <strong>
+                  <font size="18px" face="Lucida Handwriting" color="#000000">Beauty Plaza
+                  </font>
+              </strong>
+          </h1> 
+        <div class="dropdown navbar-brand" style="float: right;">
+            <button class="btn btn-default btn-lg btn-success dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" >Wish List <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                <li role="presentation" class="btn"><a role="menuitem" tabindex="-1" href="#/cosmetics/add">Add to List</a></li>
+                <li role="presentation" class="btn"><a role="menuitem" tabindex="-1" href="#/cosmetics">Update Items</a></li>
+            </ul>
+        </div>
+      </div>   
+    </nav>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-md-12">
+    			<div ng-view></div>
+    		</div>
+    	</div>
+    </div>
+
+    </body>
+    <!-- /.container -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="/app.js"></script>
+	<script src="/controllers/cosmetics.js"></script>
+	</html>
