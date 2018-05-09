@@ -13,6 +13,8 @@
         <div class="form-group">
           <label>Type</label>
           <select ng-model="cosmetic.type" class="form-control" required>
+            <option value="">Select</option>
+            <option value="Nail-makeup">Nail Makeup</option>
             <option value="Eye-makeup">Eye-makeup</option>
             <option value="SkinCare">Skin Care</option>
             <option value="HairCare">Hair Care</option>
@@ -32,12 +34,16 @@
           <input type="number"  step="any" class="form-control" ng-model="cosmetic.price" placeholder="Price" required>
         </div>
           
-         
+       
+           <div class="form-group">
+          <label>Upload Image</label>
+          <input type="file"  class="form-control" ng-model="cosmetic.image_url" placeholder="Image URL">
+        </div>
 
-        <div class="form-group">
+  <!--      <div class="form-group">
           <label>Image URL</label>
           <input type="url" class="form-control" ng-model="cosmetic.image_url" placeholder="Image URL">
-        </div>
+        </div> -->
         <div class="form-group">
           <label>Buy URL</label>
           <input type="url" class="form-control" ng-model="cosmetic.buy_url" placeholder="Buy URL" required>
