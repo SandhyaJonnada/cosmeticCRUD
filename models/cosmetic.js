@@ -13,16 +13,19 @@ const cosmeticSchema = mongoose.Schema({
 	
 	
 	brand:{
-		type: String
+		type: String,
+        required: true
 	},
 	price:{
-		type: String
+		type: Number,
+        required: true
 	},
 	image_url:{
 		type: String
 	},
 	buy_url:{
-		type: String
+		type: String,
+        required: true
 	},
 	create_date:{
 		type: Date,

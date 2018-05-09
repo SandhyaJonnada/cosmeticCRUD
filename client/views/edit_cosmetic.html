@@ -3,17 +3,17 @@
   <div class="panel-heading" style="font-weight: 800; color: black; background: #A0A0A0; font-weight: 800; color: black;">
     <h3 class="panel-title" style="font-weight: 800; color: black; ">Update Cosmetic Details</h3>
   </div>
-  <div class="panel-body" style="font-weight: 800; color: black;">
+  <div class="panel-body" style="font-weight: 800; color: black;background-image:url(https://thumb9.shutterstock.com/mosaic_250/4000264/537019366/stock-photo-organic-cosmetic-with-rose-oil-on-white-background-top-view-537019366.jpg); background-repeat: no-repeat; background-size: cover;">
     <div class="row">
       <div class="col-md-12">
       <form ng-submit="updateCosmetic()" ng-init="getCosmetic()">
         <div class="form-group">
           <label>Item</label>
-          <input type="text" class="form-control" ng-model="cosmetic.item" placeholder="Item">
+          <input type="text" class="form-control" ng-model="cosmetic.item" placeholder="Item" required>
         </div>
         <div class="form-group">
           <label>Type</label>
-          <select ng-model="cosmetic.type" class="form-control">
+          <select ng-model="cosmetic.type" class="form-control" required>
             <option value="Eye-makeup">Eye-makeup</option>
             <option value="SkinCare">Skin Care</option>
             <option value="HairCare">Hair Care</option>
@@ -24,21 +24,21 @@
        
         <div class="form-group">
           <label>Brand</label>
-          <input type="text" class="form-control" ng-model="cosmetic.brand" placeholder="Brand">
+          <input type="text" class="form-control" ng-model="cosmetic.brand" placeholder="Brand" required>
         </div>
         <div class="form-group">
           <label>Price</label>
-          <input type="text" class="form-control" ng-model="cosmetic.price" placeholder="Price">
+          <input type="number"  class="form-control" ng-model="cosmetic.price" placeholder="Price"  step="any" required>
         </div>
         
          
         <div class="form-group">
           <label>Image URL</label>
-          <input type="text" class="form-control" ng-model="cosmetic.image_url" placeholder="Image URL">
+          <input type="url" class="form-control" ng-model="cosmetic.image_url" placeholder="Image URL" >
         </div>
         <div class="form-group">
           <label>Buy URL</label>
-          <input type="text" class="form-control" ng-model="cosmetic.buy_url" placeholder="Buy URL">
+          <input type="url" class="form-control" ng-model="cosmetic.buy_url" placeholder="Buy URL" required>
         </div>
        
         <button type="submit" class="btn btn-default">Submit</button>

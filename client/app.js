@@ -1,10 +1,19 @@
+
+
 var myApp = angular.module('myApp',['ngRoute']);
 
 myApp.config(function($routeProvider){
-	$routeProvider.when('/', {
+/*	$routeProvider.when('/', {
 		controller:'CosmeticsController',
-		templateUrl: 'views/cosmetics.html'
+		templateUrl: 'views/cosmetics.html'      
 	})
+    */
+    $routeProvider.when('/', {
+		controller:'CosmeticsController',
+		templateUrl: 'views/home.html'      
+	})
+    
+    
 	.when('/cosmetics', {
 		controller:'CosmeticsController',
 		templateUrl: 'views/cosmetics.html'

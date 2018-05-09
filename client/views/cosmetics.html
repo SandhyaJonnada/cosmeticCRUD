@@ -4,7 +4,7 @@
   </div>
     
  
-  <div class="panel-body" style="font-weight: 800; color: black;">
+  <div class="panel-body" style="font-weight: 800; color: black; background-image:url(https://thumb9.shutterstock.com/mosaic_250/4000264/537019366/stock-photo-organic-cosmetic-with-rose-oil-on-white-background-top-view-537019366.jpg); background-repeat: no-repeat; background-size: cover;">
     <div class="row">
     	<div ng-repeat="cosmetic in cosmetics">
             
@@ -14,16 +14,21 @@
     			<div class="col-md-6" style="font-weight: 800; color: black;">
     				<h2>{{cosmetic.item}}</h2>
     				<p>{{cosmetic.brand}}</p>
-                    <p>{{cosmetic.price}}</p>
+                    <p>₹{{cosmetic.price}}</p>
     				<a class="btn btn-primary" href="#/cosmetics/details/{{cosmetic._id}}">View Details</a>
     			</div>
     			<div class="col-md-6">
-    				<img class="thumbnail" src="{{cosmetic.image_url}}" height="140" width="20">
+    				<img class="thumbnail" src="{{cosmetic.image_url}}" height="140" width="20" onerror="this.onerror=null; this.src='https://insidefmcg.com.au/wp-content/uploads/2017/06/cosmetics4.jpg';">
     			</div>
     		</div>
     	
     </div>
   </div>
-      
+      <br><br>
+      <div>
+      <center>
+        <a href="#/" class="btn btn-primary">Go To Home</a> 
+      </center>
+      </div>
     </div>
 </div>
